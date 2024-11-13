@@ -1,0 +1,1101 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    color: white;
+  }
+  
+  @font-face {
+    font-family: panchangBold;
+    src: url(../css/Panchang_Complete/Fonts/OTF/Panchang-Bold.otf)
+  }
+  @font-face {
+    font-family: panchangRegular;
+    src: url(../css/Panchang_Complete/Fonts/OTF/Panchang-Regular.otf)
+  }
+  
+  img{
+    width: 50;
+  }
+  /* this is my header section styles  */
+  header{
+    width: 100%;
+    background: #000;
+  }
+  header .header-inner{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+    header .header-inner .join-text{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    header .header-inner .join-text span{
+    background: #000;
+    z-index: 1;
+    font-size: 10px;
+    font-family: panchangBold;
+    }
+    header .header-inner .join-text img{
+      width: 50%;
+      margin-left: -7%;
+      z-index: 0;
+    }
+  /* my header section styles end here  */
+  /*  this is my hero section styles  */
+  .hero{
+    padding-top: 5%;
+    padding-bottom: 15%;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    gap: 10%;
+    font-family: panchangRegular;
+    font-size: x-large;
+    display: grid;
+    color: aliceblue;
+  }
+  .hero span{
+    color: #000;
+    background-image: url(../images/img-bg.png);
+    background-position: center center;
+    background-size: cover;
+    gap: 30%;
+    font-size: 80%;
+    font-weight: 900;
+  }
+  .hero.hero-inner div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    gap: 100%;
+    background-color: #000;
+    font-size: large;
+  }
+  .hero.hero h1{
+    font-size: 50%;
+  }
+  .hero .hero-inner h2{
+    font-size:10% ;
+    padding-top: 5%;
+    text-align: center;
+  }
+  .hero .hero-inner h4{
+  font-size: 40%;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 50px;
+  }
+  /* this is my moving line styles  */
+  .moving-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    margin:0 auto;
+    width: 4px;
+    height: 100px;
+    margin-top: 25px;
+    background: linear-gradient(to bottom, rgb(224, 224, 224), black);
+    /* colortransitionfromwhitetoblack  */
+    transform: translate(-50, -50%);
+    animation: moveUpDown 2s infinite ease-in-out;
+    cursor: pointer;
+    -webkit-transform:translate(-50%, -50%);
+    -moz-transform:translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform:translate(-50%, -50%);
+  }
+  /* moving the line up and down  */
+  @keyframes moveUpDown{
+    0%, 100%{
+      transform: translate(-50%,-50%);
+    }
+    50%{
+      transform: translate(-50%,-45%);
+    }
+  }
+  
+  /* my hero section styles ends here  */
+  /* this is my about section styles  */
+  .about{
+    color: white;
+    background: #000;
+  }
+  .about h2{
+    text-align: center;
+    font-family: panchangBold;
+    font-size: large;
+  }
+  .about h2 span{
+    text-align: center;
+    color: black;
+    background-image: url(../images/img-bg.png);
+    text-align: center;
+    font-size: large;
+    font-family: panchangBold;
+     background-position: center center;
+    background-size: cover;
+    width: 10%;
+    
+  }
+  
+  .about .about-inner{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    padding: 10%;
+    gap: 0%;
+    font-family: panchangRegular;
+  }
+  .about .about-inner p{
+  font-weight: 300;
+  font-family: panchangRegular;
+  font-size: small
+  }
+  .about h4{
+  font-size: 100%;
+  font-weight: lighter;
+  font-family: panchangRegular;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 2px;
+  }
+  .about .h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: medium;
+    font-weight: lighter;
+  }
+  #about p{
+    padding: 2%;
+    margin-top: 25px;
+    text-align: center;
+    font-size: large;
+    font-weight: lighter;
+  }
+  
+  /* my about section ends here  */
+  /* this is my video section styles  */
+    .video{
+      background-color: brown;
+      padding: 20%;
+    }
+  /* my video section  styles end here  */
+  /* this is my fifth section styles  */
+  .fifth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ffffff;
+  padding: 5% 10% 10% 10%;
+  font-family: panchangRegular;
+  }
+  
+  
+  .fifth .fifth-inner p{
+    text-align: center;
+   color: #000;
+    padding: 2% 20%;
+    font-weight: lighter;
+    font-size: medium;
+  
+  }
+  .fifth.fifth-inner.join-text{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .fifth .fifth-inner .join-text span{
+   background: #ffffff;
+   z-index: 1;
+   font-size: small;
+   color: #000;
+   margin-left: 15%;
+   margin-bottom: 20%;
+    font-family: panchangBold;
+  }
+  .fifth .fifth-inner .join-text img{
+  width: 23%;
+  margin-left: -0%;
+  z-index: 0;
+  margin-bottom: -1%;
+  }
+  /* my fifth section styles  end here  */
+  /* this is my sixth section styles  */
+  .sixth .images{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    background-color: #000;
+    padding-top: 10%;
+  }
+  .sixth  .images .sixth-inner {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+  .sixth .images .sixth-inner img{
+  width: 100%;
+  height: auto;
+  }
+  @media(min-width:786px){
+    #sixth .images{
+      flex-wrap: wrap;
+      overflow: visible;
+    }
+    #sixth  .images .sixth-inner .img{
+      flex: 0 0 25%;
+    }
+    
+  
+  
+  }
+  /* my sixth section styles ends here  */
+  
+  /* this is my seventh section styles  */
+  .seventh{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  background-color: #000;
+  padding: 5%;
+  }
+  .seventh .seventhcards{
+    display: flex;
+     overflow-x: auto;
+    scroll-snap-type: x mandatory;
+   
+  }
+  .seventh  .join-text h1{
+    background-image: url(../images/img-bg.png);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: panchangBold;
+    font-size: large;
+  }
+  
+  .seventh .seventhcards .seventhcard{
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+  .seventh .seventcards .seventhcard img{
+    width: 100;
+    height: auto;
+  }
+  .seventh .seventhcards .seventhcard p span{
+    background: red;
+  }
+  @media(min-width:768px) {
+    .seventh .seventhcards{
+      flex-wrap: wrap;
+      overflow:visible;
+    }
+    .seventh .seventhcards{
+      flex: 0 0 30%;
+    }
+    .seventh .seventhcards p{
+      font-family: panchangRegular;
+      padding-top: 5%;
+      font-family: panchangRegular;
+    }
+    .seventh .seventhcards h2{
+      padding-top: 5%;
+      font-family: panchangBold;
+      font-size: 35%;
+    }
+  
+  }
+  /* my seventh section styles end here  */
+  /* this is my eighth section styles  */
+  .eighth .eighth-inner{
+   display: flex; 
+   overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 5%;
+    
+    
+  }
+  .eighth .eighth-inner .card{
+     flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+  .eighth .eighth-inner .card img{
+    width: 100%;
+    height: auto;
+  }
+  @media(min-width:768px){
+    #eighth{
+      flex-wrap: wrap;
+      overflow: visible;
+    }
+    #eighth .eighth-inner{
+      flex: 0 0 25%;
+  
+    }
+  }
+  /* my eighth section styles end here  */
+  
+  /* this is my nineth section styles  */
+   .nineth{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+   background: #ffffff;
+    padding: 5%;
+    padding-bottom: 0%;
+   
+  }
+  .nineth .nineth-inner p{
+    text-align: center;
+    color: red;
+    background-color: #ffffff;
+    font-weight: 200;
+    font-family: panchangRegular;
+    font-size: 35%;
+    margin-bottom: 10%;
+    gap: 2%;
+  
+  }
+  
+  .nineth  .nineth-inner span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: panchangBold;
+    background-image: url(../images/img-bg.png);
+    background-position: center center;
+    background-size: cover;
+   width: 50%;
+    padding: 5%;
+    margin-left: 20%;
+    font-size: larger;
+  }
+  .nineth .nineth-inner .form{
+    margin-right: 25%;
+    justify-self: center center;
+    width: 60%;
+    margin-bottom: 20%;
+    color: #000;
+  }
+  .nineth .nineth-inner .form .InputEmail{
+    width:100% ;
+    max-width: 650px;
+    padding: 30% ;
+  background-color: grey;
+    border: none;
+  
+  }
+  .nineth .nineth-inner .join-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+  }
+  .nineth .nineth-inner .join-text h1{
+   z-index: 1;
+    font-size: 100%;
+    font-family: panchangBold;
+    color: #000;
+     text-align: center;
+     margin-left: 30%;
+    
+  }
+  .nineth .nineth-inner .join-text img{
+    width: 15%;
+    z-index: 10;
+    color: red;
+  }
+  /* my nineth section ends here  */
+  /* this is my tenth section styles */
+   .tenth{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #000;
+    padding: 5%;
+    padding-top: 0%;
+  }
+  .tenth  .tenthimage h4{
+    background-image: url(../images/img-bg.png);
+    color: black;
+    background-position: center center;
+    background-size: cover;
+    font-family: panchangBold;
+    padding:3%; 
+    width: 60%;
+    font-size: larger;
+    margin-left: 20%;
+    text-align: center; 
+  }
+  .tenth-inner .tenthcards{
+   display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-content: center;
+  margin-top:25px ;
+  margin-bottom: 25px;
+  column-gap: 3%;
+  scroll-snap-align: x mandatory;
+  overflow-x: auto;
+  }
+  .tenth-inner .tenthcards p{
+    color: red;
+    text-align: center;
+  }
+  
+  .tenth .tenth-inner .tenthcards .tenthcard{
+    flex: 0% 0% 100%;
+    scroll-snap-align:center;
+  }
+  
+  .tenth .tenth-inner.tenthcards .tenthcard img{
+    width: 50%;
+    height: auto;
+  
+  }
+  /* my tenth section styles end here  */
+  /* this is my footer section styles  */
+  .footer{
+    background-image: url(../images/footer-bg.png);
+    background-position:center center ;
+    background-size: cover;
+   height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding:5%; 
+     gap: 25%;
+  }
+  .footer-inner{
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+       
+  }
+  .footer .footer-inner img{
+    width: 30;
+    align-items: left;
+  }
+  .footer .logo-text p{
+    font-family: panchangRegular;
+    text-align: right; 
+    color: black;
+  }
+  
+  /* my footer section styles end here  */
+  
+  @media(min-width:992px){
+    
+  header{
+    width: 100%;
+  }
+  header .header-inner{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header-inner .join-text{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header .header-inner .join-text span{
+    background: #000;
+    z-index: 1;
+    font-family: panchangRegular;
+    font-size: 30px;
+  }
+  header .header-inner .join-text img{
+   width: 15%;
+    margin-left: -7%; 
+    z-index: 0;
+  }
+  
+  .h1-text{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+  }
+  .h1-text span{
+    color: #ffffff;
+    background: none;
+    z-index: 1;
+  }
+  .h1-text:before{
+    width: 150px;
+    height: 25px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: url(../images/img-bg.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 45%;
+    top: 5%;
+  }
+  .hero{
+    padding-top: 5%;
+    padding-bottom: 15%;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-family: panchangRegular;
+    font-size: x-large;
+    gap: 10%;
+    display: grid;
+    color: aliceblue;
+    text-align: center;
+  }
+  .hero.hero-inner  div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    gap: 100%;
+    background-color: black;
+    font-size: smaller;
+  }
+  .hero span{
+    width: 100px;
+    font-weight: 900;
+    font-size: 80px;
+    gap: 30%;
+    background-image: url(../images/img-bg.png);
+    background-position: center center;
+    background-size: cover;
+    color: black;
+  
+  }
+  .hero h4{
+    font-size: 60px;
+  }
+  
+  .hero .hero-inner .link{
+    font-size: 60px;
+    padding-top: 50%;
+  }
+  .hero h1{
+    font-weight: 900;
+    font-size: 80px;
+  }
+  
+  /* this is moving line styles  */
+  .moving-line{
+    margin: 0 auto;
+    width: 4px;
+    height: 100px;
+    background: linear-gradient(to bottom, rgb(212, 255, 0),black);
+    /*colortransitionfromwhitetoblack*/transform: translate(-50%, -50%);
+    animation: moveUpDown 2s infinite ease-in-out;
+    cursor: pointer;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  
+  }
+  /* moving the line up and down  */
+  @keyframes moveUpDown{
+    0%, 100%{
+      transform: translate(-50%, -50%);
+    }
+    50%{
+      transform: translate(-50%, -45%);
+    }
+  
+  }
+  /* my moving line styles ends here  */
+  .about{
+    color: white;
+  }
+   .about .about-inner{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    padding: 10%;
+    color: aliceblue;
+    display: grid;
+    gap: 0%;
+    font-family: panchangRegular;
+   }
+   .about .h2 .span{
+    color: black;
+    font-size: 100px;
+    font-weight: 900;
+  background-image: url(../images/img-bg.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100px;
+   }
+   .about h2{
+    font: 100px;
+    font-weight: 900;
+   }
+   .about h4{
+    font-size: 60px;
+    font-weight: 100;
+   }
+   .about p{
+    font-size: 50px;
+    font-weight: 100;
+    padding: 2% 30% 2% 30%;
+    margin-top: 2%;
+   }
+  
+  .video{
+    background-color: brown;
+    padding: 20%;
+    display: flex;
+    width: 100%;
+    height: 5ovh;
+  }
+  .video-inner{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  
+  .fifth{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    padding: 5% 10% 5% 10%;
+    font-family: panchangRegular;
+    font-size: xx-large;
+  }
+  .fifth .fifth-inner p{
+     padding: 2% 20%;
+    font-weight: 500;
+  
+  }
+  .fifth .fifth-inner .join-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+  }
+  .fifth .fifth-inner.join-text span{
+    
+    background: white;
+    border: none;
+    z-index: 1;
+    font-size: 40px;
+    font-family: panchangRegular;
+    color:black;
+    font-weight: bolder;
+    
+  }
+  .fifth .fifth-inner.join-text img{
+    width: 5%;
+    margin-left: -7%;
+    z-index: 0;
+  
+  }
+  
+  .sixth{
+    display:flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    
+  }
+  .sixth-inner{
+    flex: 0 0 100%;
+    scroll-snap-align:center ;
+  }
+  .sixth-inner{
+    width: 100%;
+    height: auto;
+  }
+  
+  .seventh{
+     display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 20%;
+  }
+  .seventh .seventh-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10%;
+    padding: 3%; 
+  }
+  .seventh .seventh-cards h2{
+    padding-top: 10%;
+    font-size: xx-large;
+    font-family: panchangRegular;
+  }
+  .seventh .seventh-cards p{
+    padding:10% 30% ;
+    font-size: x-large;
+    font-family: panchangRegular;
+  }
+  .seventh .seventh-inner span{
+    background-color: brown;
+  }
+  .seventh .join-text{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .seventh .join-text span{
+    background: none;
+    z-index: 1;
+    font-family: panchangRegular;
+    color: black;
+    font-size: 125px;
+    font-weight: 1000;
+  }
+  .seventh .join-text img{
+    width: 30%;
+    margin-left: -25%;
+    z-index: 0;
+  }
+  
+  .eighth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .eighth .eighth-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    margin-top: 10px;
+   margin-bottom: 10px;
+  }
+  .eighth .eighth-inner img{
+    width: 100%;
+    height: auto;
+  }
+    .eighth{
+      flex-wrap: wrap;
+      overflow: visible;
+    }
+    .eighth .eighth-inner{
+      flex: 0 0 25%;
+    }
+  
+   .nineth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    gap: 5%;
+    background: #ffffff;
+    padding: 15%;
+    margin-top: 15%;
+  }
+  .nineth .nineth-inner p{
+    text-align: center;
+    color: red;
+    background-color: #ffffff;
+    font-weight: 200;
+    font-family: panchangRegular;
+    font-size: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nineth .nineth-inner span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: panchangBold;
+    background-image: url(../images/img-bg.png);
+    background-position: center center;
+    background-size: cover;
+    font-size: 35%;
+    width: 10;
+    padding: 5%;
+    background-color: #ffffff;
+  }
+  .nineth .nineth-inner .form .InputEmail{
+    padding: 20% 45% 40% 0%;
+    background-color: grey;
+    border: none;
+    display:flex flex;
+    align-items: center;
+    justify-content: center ;
+    text-align: center; 
+  }
+  .nineth .nineth-inner .join-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .nineth .nineth-inner.join-text button{
+   background-color: white;
+    border: none;
+    z-index: 1;
+    font-size: 80%;
+    font-family: panchangBold;
+   font-weight: 10%;
+    display: flex-end;
+  }
+  .nineth  .nineth-inner.join-text img{
+    width: 15%;
+    margin-left: -7%;
+    z-index: 0;
+    color: red;
+  }
+  
+  .tenth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    padding: 15%;
+  }
+  .tenth h4{
+    background-image: url(../images/img-bg.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-position: center center;
+    background-size: cover;
+    font-size: 25%;
+    font-family: panchangBold;
+    padding: 5%;
+    font-weight: 200%; 
+  }
+  
+  .tenth .tenth-inner img{
+     align-content: center;
+  }
+  .tenth .tenth-inner .tenthcards{
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  }
+  .tenth .tenth-inner .tenthcards .tenthcard-one{
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+  
+  .tenth .tenth-inner.tenthcards .tenthcard-one img{
+    width: 50%;
+    height: auto;
+  }
+  
+    .footer{
+      padding:2%;
+      background-image: url(../images/footer-bg.png);
+      background-size: cover;
+      background-position: center;
+     height:5vh ;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size:small ;
+    
+    }
+    .footer-inner{
+       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+  }
+  @media(min-width:1200px){
+    .about{
+      display: grid;
+      align-items: center;
+      gap:3%;
+    }
+    .about h4{
+      font-size: large;
+    }
+    .about div{
+      margin-bottom: 0%;
+    }
+    .about .about-inner{
+      margin-top: 0%; 
+    }
+    .about .about-inner p{
+      font-size: small;
+      font-family: panchangRegular;
+    
+    }
+    .fifth .fifth-inner .join-text{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .fifth .fifth-inner .join-text span{
+      z-index: 1;
+      font-size: 10px;
+      font-family: panchangBold;
+      background: white;
+    }
+    .fifth .fifth-inner .join-text img{
+      width: 5%;
+      margin-left: -1%;
+      z-index: 0;
+    }
+    .sixth{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+    }
+    .sixth .images .sixth-inner{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     column-gap: none;
+    }
+    .sixth .images .sixth-inner img{
+  width: 20%;
+    }
+    .seventh{
+      display: grid;
+      align-items: center;
+      padding: 0%;
+      gap: 5%;
+      height: 100vh;
+    }
+     .seventhcards{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .seventh .seventhcards .seventhcard p{
+      font-size: small;
+      font-weight: normal;
+    }
+    .eighth{
+      display: flex;
+      justify-content:center ;
+      align-items: center;
+    }
+    .nineth{
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      gap: 3%;
+      height: 45vh;
+      width:50%;
+     
+    }
+    .nineth .nineth-inner span{
+      font-size:x-large ;
+      font-family: panchangBold;
+      justify-items: center;
+    }
+    .nineth .nineth-inner p{
+      font-size: medium;
+    }
+    .nineth .nineth-inner .join-text{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .nineth .nineth-inner .join-text h1{
+      background-color:white;
+      z-index: 1;
+      font-size: medium;
+    }
+    .nineth .nineth-inner .join-text img{
+      width: 15%;
+      z-index: 0;
+      margin-left: -3%;
+    }
+    .tenth{
+      display: grid;
+      align-items: center;
+      gap: 10%;
+    
+    }
+    .tenth .tenth-inner .tenthcards{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5%;
+    }
+    .footer{
+      background-color: none;
+      background: url(../images/footer-bg.png);
+    background-position: center center;
+    background-size: cover cover;
+   width: 100%;
+   height: 30vh;
+    }
+   .footer .footer-inner div img{
+   padding-right: 700px;
+   }
+   .footer .logo-text p{
+  padding-right: 100px;
+    font-family: panchangBold;
+   }
+  }
+  
+  @media(min-width:1024px){
+    .seventh{
+      display: grid;
+      align-items: center;
+    }
+    .seventh .seventhcards{
+      display: flex;
+      align-items: end;
+      justify-content: center;
+    }
+  }
+    
+   
+  
